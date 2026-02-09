@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-serif: var(--font-serif), ui-serif, Georgia, serif;
+  
+  --color-gold: #D4AF37;
+  --color-silver: #C0C0C0;
+  --color-platinum: #E5E4E2;
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: #000000;
+  --accent: #1a1a1a;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  text-rendering: optimizeLegibility;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-serif);
+  font-weight: 400;
+}
+
+@layer base {
+  * {
+    @apply border-gray-200;
+  }
+}
