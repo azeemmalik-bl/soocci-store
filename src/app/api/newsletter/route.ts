@@ -23,7 +23,7 @@ export async function POST(req: Request) {
         // 1. Notify Admin about new subscriber
         const { data, error } = await resend.emails.send({
             from: 'Soocci Newsletter <onboarding@resend.dev>',
-            to: [process.env.CONTACT_EMAIL || 'alexwixpartner@gmail.com'],
+            to: [process.env.CONTACT_EMAIL || 'simon@soocci.com'],
             subject: 'New Newsletter Subscription',
             html: `
                 <div style="font-family: serif; padding: 40px; border: 1px solid #000; max-width: 600px; margin: 0 auto; background-color: #fff;">

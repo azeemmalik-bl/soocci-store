@@ -22,7 +22,7 @@ export async function POST(req: Request) {
 
         const { data, error } = await resend.emails.send({
             from: 'Soocci Inquiries <onboarding@resend.dev>',
-            to: [process.env.CONTACT_EMAIL || 'alexwixpartner@gmail.com'],
+            to: [process.env.CONTACT_EMAIL || 'simon@soocci.com'],
             subject: subject || `New Inquiry from ${name}`,
             replyTo: email,
             html: `
