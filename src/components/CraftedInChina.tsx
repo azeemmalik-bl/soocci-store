@@ -4,14 +4,14 @@ import React from "react";
 import { motion } from "framer-motion";
 
 const factoryImages = [
-    "/assets/39dac8_0cb38c44d60e44448ef3034b2075ec36~mv2.jpg",
-    "/assets/39dac8_262c2b2c7f05415cbbcee9ed53def017~mv2.jpg",
-    "/assets/39dac8_72bb363b129a4cd2b63f07a91aceecef~mv2.jpg",
-    "/assets/39dac8_7f1c90f7d910431cac9aef3355e55ce1~mv2.jpg",
-    "/assets/39dac8_86a4d1d8342b4e4e80339f39c996c420~mv2.jpg",
-    "/assets/39dac8_98b528ae73ee450194aaaed8d85efaa0~mv2.jpg",
-    "/assets/39dac8_a13ed9feee284e6692f575daaf27c9ff~mv2.jpg",
-    "/assets/39dac8_ab943c0804954ff49bac856dbe730a9c~mv2.jpg",
+    "/Factory image/1.jpg",
+    "/Factory image/2.jpg",
+    "/Factory image/3-1.jpg",
+    "/Factory image/4.jpg",
+    "/Factory image/5-1.jpg",
+    "/Factory image/6.jpg",
+    "/Factory image/7.jpg",
+    "/Factory image/8.jpg",
 ];
 
 const CraftedInChina = () => {
