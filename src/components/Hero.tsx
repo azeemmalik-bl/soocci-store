@@ -8,19 +8,19 @@ import { cn } from "@/lib/utils";
 
 const slides = [
     {
-        image: "/assets/微信图片_20250226144755_副本-scaled.jpg",
+        image: "/Factory image/10.jpg",
         title: "Precision Engineering For Luxury Brands",
         subtitle: "Established 1997",
         description: "We manufacture high-performance 316L stainless steel hardware that redefines excellence in the luxury fashion industry."
     },
     {
-        image: "/assets/微信图片_20250228145309.jpg",
+        image: "/Factory image/11.jpg",
         title: "Craftsmanship That Lasts a Lifetime",
         subtitle: "Mastery in Metal",
         description: "Our artisans blend traditional techniques with cutting-edge technology to create hardware of unparalleled quality."
     },
     {
-        image: "/assets/微信图片_20250304094801_副本-scaled.jpg",
+        image: "/Factory image/12.jpg",
         title: "Innovative Design Global Excellence",
         subtitle: "Future Ready",
         description: "Partnering with the world's most prestigious fashion houses to push the boundaries of accessories design."

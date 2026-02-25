@@ -25,7 +25,7 @@ export default function AboutPage() {
                     >
                         <div
                             className="w-full h-full bg-cover bg-center"
-                            style={{ backgroundImage: "url('/assets/微信图片_20250226144755_副本-scaled.jpg')" }}
+                            style={{ backgroundImage: "url('/Factory image/14.jpg')" }}
                         />
                     </motion.div>
                 </div>
@@ -83,7 +83,7 @@ export default function AboutPage() {
                                 </p>
                                 <div className="aspect-[4/3] bg-gray-100 overflow-hidden shadow-lg">
                                     <img
-                                        src="/assets/39dac8_b7fed47293e641efaddbb292de006c8b~mv2.jpg"
+                                        src="/Factory image/3-2.jpg"
                                         alt="Precision Metalwork"
                                         className="w-full h-full object-cover"
                                     />
@@ -101,7 +101,7 @@ export default function AboutPage() {
                             <div className="py-8">
                                 <div className="aspect-[21/9] bg-gray-100 overflow-hidden shadow-xl mb-12">
                                     <img
-                                        src="/assets/Factory%20image/10.jpg"
+                                        src="/Factory image/5-2.jpg"
                                         alt="Montblanc Collaboration Milestone"
                                         className="w-full h-full object-cover"
                                     />

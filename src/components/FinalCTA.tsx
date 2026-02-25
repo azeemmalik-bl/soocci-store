@@ -27,7 +27,7 @@ const FinalCTA = () => {
                 >
                     <div
                         className="w-full h-full bg-cover bg-center"
-                        style={{ backgroundImage: "url('/assets/39dac8_dec1fae5b8e34a3cafbc6ddbf836ca45~mv2.jpg')" }}
+                        style={{ backgroundImage: "url('/Factory image/13.jpg')" }}
                     />
                 </motion.div>
             </div>
