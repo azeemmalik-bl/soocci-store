@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 
@@ -23,9 +24,13 @@ export default function AboutPage() {
                         style={{ y }}
                         className="absolute inset-0 w-full h-[120%] -top-[10%]"
                     >
-                        <div
-                            className="w-full h-full bg-cover bg-center"
-                            style={{ backgroundImage: "url('/Factory image/14.jpg')" }}
+                        <Image
+                            src="/Factory image/14.jpg"
+                            alt="Factory Interior"
+                            fill
+                            priority
+                            className="object-cover"
+                            sizes="100vw"
                         />
                     </motion.div>
                 </div>
@@ -81,11 +86,13 @@ export default function AboutPage() {
                                 <p className="text-gray-800 font-normal italic border-l-2 border-black pl-8 py-4">
                                     "Inspired by China’s world-class stainless steel watchmaking techniques, founder Simon set out to apply the same precision to luxury metal accessories."
                                 </p>
-                                <div className="aspect-[4/3] bg-gray-100 overflow-hidden shadow-lg">
-                                    <img
+                                <div className="aspect-[4/3] bg-gray-100 relative overflow-hidden shadow-lg">
+                                    <Image
                                         src="/Factory image/3-2.jpg"
                                         alt="Precision Metalwork"
-                                        className="w-full h-full object-cover"
+                                        fill
+                                        className="object-cover"
+                                        sizes="(max-width: 768px) 100vw, 33vw"
                                     />
                                 </div>
                             </div>
@@ -99,14 +106,17 @@ export default function AboutPage() {
                             </p>
 
                             <div className="py-8">
-                                <div className="aspect-[21/9] bg-gray-100 overflow-hidden shadow-xl mb-12">
-                                    <img
+                                <div className="aspect-[21/9] bg-gray-100 relative overflow-hidden shadow-xl mb-12">
+                                    <Image
                                         src="/Factory image/5-2.jpg"
                                         alt="Montblanc Collaboration Milestone"
-                                        className="w-full h-full object-cover"
+                                        fill
+                                        className="object-cover"
+                                        sizes="100vw"
                                     />
                                 </div>
                             </div>
+
 
                             <p>
                                 Today, Soocci continues to set the benchmark for stainless steel accessories in the luxury market. With SA8000-certified production, advanced material know-how, and a decade-long focus on performance and aesthetics, Soocci is the partner of choice for luxury brands seeking precision, beauty, and reliable delivery at scale.

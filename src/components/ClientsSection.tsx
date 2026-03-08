@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import Image from "next/image";
 import { motion } from "framer-motion";
 
 const clients = [
@@ -52,9 +52,11 @@ const ClientsSection = () => {
                             transition={{ duration: 0.5, delay: index * 0.1 }}
                             className="flex items-center justify-center transition-all duration-500 opacity-90 hover:opacity-100"
                         >
-                            <img
+                            <Image
                                 src={client.logo}
                                 alt={`${client.name} logo`}
+                                width={120}
+                                height={60}
                                 className="h-16 md:h-24 w-auto object-contain"
                             />
                         </motion.div>

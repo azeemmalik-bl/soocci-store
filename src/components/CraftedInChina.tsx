@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import Image from "next/image";
 import { motion } from "framer-motion";
 
 const factoryImages = [
@@ -26,11 +26,13 @@ const CraftedInChina = () => {
                         transition={{ duration: 0.8 }}
                         className="lg:w-1/2"
                     >
-                        <div className="aspect-[3/4] md:aspect-[4/5] overflow-hidden shadow-xl">
-                            <img
+                        <div className="aspect-[3/4] md:aspect-[4/5] relative overflow-hidden shadow-xl">
+                            <Image
                                 src="/assets/_MG_7011_JPG.jpg"
                                 alt="Luxury Hardware Detail"
-                                className="w-full h-full object-cover"
+                                fill
+                                className="object-cover"
+                                sizes="(max-width: 1024px) 100vw, 50vw"
                             />
                         </div>
                     </motion.div>
@@ -67,12 +69,14 @@ const CraftedInChina = () => {
                             whileInView={{ opacity: 1, scale: 1 }}
                             viewport={{ once: true }}
                             transition={{ duration: 0.5, delay: index * 0.1 }}
-                            className="aspect-square overflow-hidden grayscale hover:grayscale-0 transition-all duration-700"
+                            className="aspect-square relative overflow-hidden grayscale hover:grayscale-0 transition-all duration-700"
                         >
-                            <img
+                            <Image
                                 src={img}
                                 alt={`Factory Operation ${index + 1}`}
-                                className="w-full h-full object-cover"
+                                fill
+                                className="object-cover"
+                                sizes="(max-width: 768px) 50vw, 25vw"
                             />
                         </motion.div>
                     ))}

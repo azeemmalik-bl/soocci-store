@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import Image from "next/image";
 import { motion } from "framer-motion";
 
 const SA8000Section = () => {
@@ -46,9 +46,11 @@ const SA8000Section = () => {
                         className="lg:w-1/2 w-full flex justify-center"
                     >
                         <div className="relative max-w-md shadow-2xl bg-white p-4">
-                            <img
+                            <Image
                                 src="/assets/image_2025-05-07_095313450.png"
                                 alt="SA8000 Factory Certification"
+                                width={500}
+                                height={700}
                                 className="w-full h-auto"
                             />
                         </div>

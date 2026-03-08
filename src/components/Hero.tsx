@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
@@ -49,12 +50,18 @@ export default function Hero() {
                     className="absolute inset-0 z-0"
                 >
                     <div className="absolute inset-0 bg-black/50 z-10" />
-                    <div
-                        className="w-full h-full bg-cover bg-center transition-transform duration-[6000ms] scale-110"
-                        style={{ backgroundImage: `url('${slides[currentSlide].image}')` }}
+                    <Image
+                        src={slides[currentSlide].image}
+                        alt={slides[currentSlide].title}
+                        fill
+                        priority={currentSlide === 0}
+                        className="object-cover transition-transform duration-[6000ms] scale-110"
+                        sizes="100vw"
+                        quality={90}
                     />
                 </motion.div>
             </AnimatePresence>
+
 
             <div className="container mx-auto px-6 relative z-20 text-center">
                 <AnimatePresence mode="wait">
