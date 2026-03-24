@@ -7,18 +7,26 @@ const factoryImages = [
     "/Factory image/1.jpg",
     "/Factory image/2.jpg",
     "/Factory image/3-1.jpg",
+    "/Factory image/3-2.jpg",
     "/Factory image/4.jpg",
     "/Factory image/5-1.jpg",
+    "/Factory image/5-2.jpg",
     "/Factory image/6.jpg",
     "/Factory image/7.jpg",
     "/Factory image/8.jpg",
+    "/Factory image/9.jpg",
+    "/Factory image/10.jpg",
+    "/Factory image/11.jpg",
+    "/Factory image/12.jpg",
+    "/Factory image/13.jpg",
+    "/Factory image/14.jpg",
 ];
 
 const CraftedInChina = () => {
     return (
         <section className="py-24 bg-white overflow-hidden">
             <div className="container mx-auto px-6">
-                <div className="flex flex-col lg:flex-row items-center gap-16 mb-20">
+                {/* <div className="flex flex-col lg:flex-row items-center gap-16 mb-20">
                     <motion.div
                         initial={{ opacity: 0, x: -30 }}
                         whileInView={{ opacity: 1, x: 0 }}
@@ -35,9 +43,9 @@ const CraftedInChina = () => {
                                 sizes="(max-width: 1024px) 100vw, 50vw"
                             />
                         </div>
-                    </motion.div>
+                    </motion.div> */}
 
-                    <motion.div
+                {/* <motion.div
                         initial={{ opacity: 0, x: 30 }}
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true }}
@@ -58,8 +66,8 @@ const CraftedInChina = () => {
                                 From locking clasps to dog hooks and tailored fittings, every piece we produce carries the Soocci hallmark: precision-engineered, beautifully finished, and ready to elevate your product.
                             </p>
                         </div>
-                    </motion.div>
-                </div>
+                    </motion.div> */}
+                {/* </div> */}
 
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                     {factoryImages.map((img, index) => (
@@ -69,7 +77,7 @@ const CraftedInChina = () => {
                             whileInView={{ opacity: 1, scale: 1 }}
                             viewport={{ once: true }}
                             transition={{ duration: 0.5, delay: index * 0.1 }}
-                            className="aspect-square relative overflow-hidden grayscale hover:grayscale-0 transition-all duration-700"
+                            className="aspect-square relative overflow-hidden"
                         >
                             <Image
                                 src={img}
@@ -82,7 +90,7 @@ const CraftedInChina = () => {
                     ))}
                 </div>
             </div>
-        </section>
+        </section >
     );
 };
 

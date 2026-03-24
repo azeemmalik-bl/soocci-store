@@ -62,75 +62,56 @@ export default function AboutPage() {
                 </div>
             </section>
 
+            {/* About Content */}
             <div className="container mx-auto px-6 py-24 md:py-32">
-                <div className="max-w-3xl mx-auto">
-                    <motion.div
-                        initial={{ opacity: 0, y: 20 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        viewport={{ once: true }}
-                        transition={{ duration: 0.8 }}
-                    >
-                        <span className="text-xs tracking-[0.4em] uppercase text-gray-400 mb-6 block">Our Story</span>
-                        <h2 className="text-4xl md:text-6xl font-serif mb-16">About Soocci</h2>
+                <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.8 }}
+                    className="max-w-4xl mx-auto"
+                >
+                    <span className="text-xs tracking-[0.4em] uppercase text-gray-400 mb-6 block text-center">About Us</span>
+                    <h2 className="text-4xl md:text-6xl font-serif mb-16 text-center text-gray-900 leading-tight">
+                        DongGuan SOOCCI Accessories Ltd
+                    </h2>
 
-                        <div className="space-y-12 text-lg md:text-xl font-light leading-relaxed text-gray-600">
-                            <p>
-                                Founded in 2011, Soocci began with a single insight: the luxury industry needed faster, stronger, and more sustainable alternatives to traditional brass hardware.
-                            </p>
+                    <div className="space-y-12 text-lg md:text-xl font-light leading-relaxed text-gray-600">
+                        <p>
+                            Founded in 2011, SOOCCI is a professional manufacturer specializing in high-end metal hardware
+                            for luxury leather goods. The company is located at Room 405, Building 10, No.69 Zhenxing
+                            Avenue, Xiegang Town, Dongguan City, Guangdong Province, China (523000), with a factory area
+                            of approximately 4,000 m² and a team of 60+ skilled employees.
+                        </p>
+                        <p>
+                            SOOCCI operates with a fully integrated in-house manufacturing system, covering the entire
+                            process from technical drawing and product design, mold making, CNC programming, forming
+                            and machining, polishing, assembly, to final quality inspection. With its own design &amp; R&amp;D team
+                            and CNC programming team, SOOCCI ensures high precision, stable quality, and efficient project
+                            execution.
+                        </p>
+                        <p>
+                            The company is a long-term and stable supplier to multiple international luxury brands, including
+                            Ferrari, Grace Han, Montblanc, Mulberry, and S.T. Dupont. SOOCCI produces a wide range of
+                            leather-goods hardware, such as bag accessories, belt buckles, and functional metal
+                            components.
+                        </p>
+                        <p>
+                            Focusing primarily on 316L stainless steel sheet material, SOOCCI has deep expertise in premium
+                            stainless-steel hardware solutions. The company operates under internationally recognized
+                            management and compliance systems, including SA8000, ensuring consistent quality, responsible
+                            manufacturing, and long-term reliability for global luxury partners.
+                        </p>
+                    </div>
 
-                            <p>
-                                At the time, Italian thick gold-plated brass was the industry’s gold standard—elegant, but expensive and notoriously slow to produce.
-                            </p>
-
-                            <div className="py-8 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-                                <p className="text-gray-800 font-normal italic border-l-2 border-black pl-8 py-4">
-                                    "Inspired by China’s world-class stainless steel watchmaking techniques, founder Simon set out to apply the same precision to luxury metal accessories."
-                                </p>
-                                <div className="aspect-[4/3] bg-gray-100 relative overflow-hidden shadow-lg">
-                                    <Image
-                                        src="/Factory image/3-2.jpg"
-                                        alt="Precision Metalwork"
-                                        fill
-                                        className="object-cover"
-                                        sizes="(max-width: 768px) 100vw, 33vw"
-                                    />
-                                </div>
-                            </div>
-
-                            <p>
-                                After years of focused R&D, Soocci introduced high-grade 316L stainless steel as a smarter, more resilient alternative—without compromising the refined finish that luxury brands demand.
-                            </p>
-
-                            <p>
-                                In 2015, Montblanc recognized the innovation. After three rounds of sampling and stringent testing, Soocci became a trusted supplier, helping the brand transition from traditional brass to stainless steel hardware.
-                            </p>
-
-                            <div className="py-8">
-                                <div className="aspect-[21/9] bg-gray-100 relative overflow-hidden shadow-xl mb-12">
-                                    <Image
-                                        src="/Factory image/5-2.jpg"
-                                        alt="Montblanc Collaboration Milestone"
-                                        fill
-                                        className="object-cover"
-                                        sizes="100vw"
-                                    />
-                                </div>
-                            </div>
-
-
-                            <p>
-                                Today, Soocci continues to set the benchmark for stainless steel accessories in the luxury market. With SA8000-certified production, advanced material know-how, and a decade-long focus on performance and aesthetics, Soocci is the partner of choice for luxury brands seeking precision, beauty, and reliable delivery at scale.
-                            </p>
-                        </div>
-
-                        <div className="mt-24 pt-16 border-t border-gray-100 grid grid-cols-2 md:grid-cols-4 gap-8 text-[10px] tracking-[0.4em] uppercase text-gray-400">
-                            <div>Est. 2011</div>
-                            <div>SA8000 Certified</div>
-                            <div>316L Stainless</div>
-                            <div>Global Supplier</div>
-                        </div>
-                    </motion.div>
-                </div>
+                    <div className="mt-24 pt-16 border-t border-gray-100 flex flex-wrap justify-between gap-8 text-[10px] tracking-[0.4em] uppercase text-gray-400 items-center">
+                        <div>Est. 2011</div>
+                        <div>SA8000 Certified</div>
+                        <div>316L Stainless</div>
+                        <div>60+ Employees</div>
+                        <div>Dongguan, China</div>
+                    </div>
+                </motion.div>
             </div>
         </div>
     );
